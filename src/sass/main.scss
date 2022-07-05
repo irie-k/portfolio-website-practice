@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+// 1. All Sass tools and helpers used across the project
+@use 'utilities' as u;
+
+// 2. All the CSS files from external libraries and frameworks
+@use 'vendors' as v;
+
+// 3. All the boilerplate code for the project
+@use 'base' as b;
+
+// 4. Everything that takes part in laying out the site or application
+@use 'layout' as l;
+
+// 5. all kind of specific modules
+@use 'components' as c;
+
+// 6. Page-specific styles
+@use 'pages' as p;
+
+// 7. Themes for large sites/applications
+@use 'themes' as t;
