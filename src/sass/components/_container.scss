@@ -1,0 +1,13 @@
+//-------------------------------------
+// All styles related to the
+// container component
+//-------------------------------------
+
+@use '../utilities/variables' as v;
+
+.container {
+  overflow: hidden;
+  margin: auto;
+  max-width: v.$website-width;
+  padding: 0 1.5rem;
+}
