@@ -1,6 +1,25 @@
-//-----------------------------------------------------------------------------
-//  This file contains very basic styles
-//-----------------------------------------------------------------------------
 //-------------------------------------
-// All core site-wide styling
+// All core site-wide styles
 //-------------------------------------
+@use '../utilities/variables' as v;
+
+body {
+  background-color: #fff;
+  line-height: 1.6;
+  font-family: 'Dosis', sans-serif;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+a {
+  color: v.$clr-dark;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
