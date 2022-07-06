@@ -3,10 +3,45 @@
 // navigation of the site/application
 //-------------------------------------
 
-// Logo
+@use '../utilities/variables' as v;
+
 #logo {
   color: #fff;
   height: 70px;
   width: 70px;
   text-transform: uppercase;
+}
+
+#nav__main {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding: 1rem 1.5rem;
+  }
+
+  a {
+    color: #fff;
+    transition: border-color 200ms ease;
+    -webkit-transition: border-color 200ms ease;
+    -moz-transition: border-color 200ms ease;
+    -ms-transition: border-color 200ms ease;
+    -o-transition: border-color 200ms ease;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+
+    &:hover {
+      border-color: v.$clr__medium;
+    }
+
+    &.current-page {
+      border-color: v.$clr__primary;
+    }
+  }
 }

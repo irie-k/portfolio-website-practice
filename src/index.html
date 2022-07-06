@@ -26,7 +26,7 @@
         <nav id="nav__main">
           <img id="logo" src="assets/img/logo.png" alt="My Portfolio" />
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a class="current-page" href="index.html">Home</a></li>
             <li><a href="pages/about.html">About</a></li>
             <li><a href="pages/work.html">Work</a></li>
             <li><a href="pages/contact.html">Contact</a></li>
@@ -34,9 +34,22 @@
         </nav>
 
         <div class="header__content">
-          <h1>I Am John The</h1>
+          <h1>
+            I Am John The
+            <span
+              class="txt-type"
+              data-wait="3000"
+              data-words='["Photographer", "Designer", "UI/UX Developer"]'
+            ></span>
+          </h1>
+          <p class="lead">
+            I specialize in graphic design, UI/UX, and photography
+          </p>
+          <a class="btn__light" href="work.html">View My Work</a>
         </div>
       </div>
     </header>
+
+    <script src="js/typewriter.js"></script>
   </body>
 </html>

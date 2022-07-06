@@ -2,3 +2,29 @@
 // All styles related to the header
 // of the site/application
 //-------------------------------------
+
+@use '../utilities/variables' as v;
+
+#header {
+  &__home {
+    background: v.$img-background no-repeat center right / cover;
+    color: #fff;
+    height: 100vh;
+
+    .header__content {
+      padding-top: 20%;
+      text-align: center;
+
+      h1 {
+        line-height: 1.2;
+        font-size: 4rem;
+      }
+    }
+  }
+}
+
+.lead {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.3rem;
+}

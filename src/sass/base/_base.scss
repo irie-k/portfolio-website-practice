@@ -1,6 +1,7 @@
 //-------------------------------------
 // All core site-wide styles
 //-------------------------------------
+
 @use '../utilities/variables' as v;
 
 body {
@@ -16,7 +17,7 @@ h4 {
 }
 
 a {
-  color: v.$clr-dark;
+  color: v.$clr__dark;
   text-decoration: none;
 }
 
