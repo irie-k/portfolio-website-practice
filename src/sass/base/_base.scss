@@ -10,15 +10,13 @@ body {
   font-family: 'Dosis', sans-serif;
 }
 
-h2,
-h3,
-h4 {
+// prettier-ignore
+h2, h3, h4 {
   text-transform: uppercase;
 }
 
 a {
   color: v.$clr__dark;
-  text-decoration: none;
 }
 
 img {

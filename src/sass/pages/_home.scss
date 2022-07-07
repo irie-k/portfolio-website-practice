@@ -2,3 +2,118 @@
 // Styles that are specific to the
 // home page
 //-------------------------------------
+
+@use '../utilities/variables' as v;
+@use '../utilities/functions' as f;
+
+#home {
+  &__a {
+    .specials {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin-top: 3rem;
+
+      .fas {
+        color: v.$clr__primary;
+        padding-bottom: 0.4rem;
+      }
+    }
+  }
+
+  &__b {
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      div {
+        padding: 3rem 0;
+
+        &:nth-child(even) {
+          background-color: v.$clr__medium;
+        }
+
+        &:nth-child(odd) {
+          background-color: v.$clr__light;
+        }
+      }
+
+      li {
+        line-height: 2;
+
+        &.stats__title {
+          font-size: 1.5rem;
+        }
+
+        &.stats__number {
+          font-size: 2rem;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  &__c {
+    .process {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 5rem;
+
+      &__icon {
+        background-color: v.$clr__dark;
+        color: f.set-text-color(v.$clr__dark);
+        position: relative;
+        transition: all 200ms ease;
+        -webkit-transition: all 200ms ease;
+        -moz-transition: all 200ms ease;
+        -ms-transition: all 200ms ease;
+        -o-transition: all 200ms ease;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        height: 70px;
+        width: 70px;
+        padding: 2rem;
+        line-height: 70px;
+
+        &:hover {
+          background-color: v.$clr__primary;
+          color: f.set-text-color(v.$clr__light);
+          height: 90px;
+          width: 90px;
+          line-height: 90px;
+
+          .process__step {
+            background-color: v.$clr__dark;
+          }
+        }
+      }
+
+      &__step {
+        background-color: v.$clr__primary;
+        color: f.set-text-color(v.$clr__primary);
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: all 200ms ease;
+        -webkit-transition: all 200ms ease;
+        -moz-transition: all 200ms ease;
+        -ms-transition: all 200ms ease;
+        -o-transition: all 200ms ease;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        height: 15px;
+        width: 15px;
+        padding: 1rem;
+        line-height: 15px;
+        font-size: 28px;
+      }
+    }
+  }
+}

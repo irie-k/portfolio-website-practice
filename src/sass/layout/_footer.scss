@@ -2,3 +2,43 @@
 // All styles related to the footer
 // of the site/application
 //-------------------------------------
+
+@use '../utilities/variables' as v;
+
+#footer__main {
+  background-color: v.$clr__dark;
+  color: #fff;
+  position: static;
+  height: 5rem;
+
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+
+    .social .fab {
+      transition: all 200ms ease;
+      -webkit-transition: all 200ms ease;
+      -moz-transition: all 200ms ease;
+      -ms-transition: all 200ms ease;
+      -o-transition: all 200ms ease;
+      margin-right: 1rem;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      padding: 0.5rem;
+      line-height: 20px;
+      text-align: center;
+
+      &:hover {
+        background-color: v.$clr__primary;
+      }
+    }
+  }
+}

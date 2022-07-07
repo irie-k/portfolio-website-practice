@@ -15,32 +15,33 @@
   border: none;
   padding: 0.8rem 2rem;
   cursor: pointer;
-  font-size: 1.2rem;
-  font-weight: 600;
+
+  //font-weight: 600;
+  //font-size: 1.2rem;
 }
 
 .btn {
   &__main {
+    @extend %btn__shared;
     background-color: v.$clr__primary;
     color: #333;
-    @extend %btn__shared;
   }
 
   &__light {
-    background-color: v.$clr__light;
-    color: #333;
     @extend %btn__shared;
+    background-color: v.$clr__light;
+    color: v.$clr__dark;
   }
 
   &__dark {
+    @extend %btn__shared;
     background-color: v.$clr__dark;
     color: v.$clr__light;
-    @extend %btn__shared;
   }
 }
 
 button[class^='btn__']:hover,
-a[class^='btn__']:hover,
-input[class^='btn__']:hover {
+input[class^='btn__']:hover,
+a[class^='btn__']:hover {
   background-color: v.$clr__primary;
 }
