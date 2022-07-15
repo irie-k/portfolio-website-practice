@@ -18,8 +18,7 @@
     "watch": "npm-run-all --parallel watch:*",
     "serve": "browser-sync start --server dist --files dist",
     "start": "npm-run-all copy --parallel watch serve",
-    "build:scss": "sass --no-source-map src/sass:dist/css",
-    "prebuild": "rimraf dist && npm run build:scss",
+    "prebuild": "sass --no-source-map src/sass:dist/css",
     "build": "copyfiles -u 1 -e \"src/sass/**/*\" \"src/**/*\" dist",
     "postbuild": "postcss dist/css/*.css -u autoprefixer cssnano -r --no-map"
   },
