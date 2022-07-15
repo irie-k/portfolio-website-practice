@@ -81,9 +81,11 @@
         &:hover {
           background-color: v.$clr__primary;
           color: f.set-text-color(v.$clr__light);
-          height: 90px;
-          width: 90px;
-          line-height: 90px;
+          transform: scale(2);
+          -webkit-transform: scale(2);
+          -moz-transform: scale(2);
+          -ms-transform: scale(2);
+          -o-transform: scale(2);
 
           .process__step {
             background-color: v.$clr__dark;
