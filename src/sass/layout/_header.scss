@@ -21,4 +21,10 @@
       }
     }
   }
+
+  &__inner {
+    background: v.$img-background no-repeat 20% 30% / cover;
+    border-bottom: 3px solid v.$clr__primary;
+    height: 5.5rem;
+  }
 }

@@ -1,0 +1,54 @@
+#contact {
+  &__a {
+    .input__fields {
+      display: grid;
+      grid-template-areas:
+        'name email'
+        'subject phone'
+        'message message';
+      gap: 1.2rem;
+      margin-bottom: 1.2rem;
+
+      .input__name {
+        grid-area: name;
+      }
+      .input__subject {
+        grid-area: subject;
+      }
+      .input__email {
+        grid-area: email;
+      }
+      .input__phone {
+        grid-area: phone;
+      }
+      .input__message {
+        grid-area: message;
+        height: 100px;
+        resize: none;
+      }
+
+      .input__text {
+        padding: 0.5rem 1rem;
+      }
+    }
+
+    button[type='submit'] {
+      width: 50%;
+    }
+  }
+
+  &__b {
+    .contact__info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+    }
+  }
+
+  &__c {
+    h1 {
+      text-align: center;
+      font-size: 4rem;
+    }
+  }
+}

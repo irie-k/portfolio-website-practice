@@ -1,0 +1,129 @@
+@use '../utilities/variables' as v;
+@use '../utilities/functions' as f;
+
+.bg {
+  &__main {
+    background-color: v.$clr__primary;
+    color: f.set-text-color(v.$clr__primary);
+  }
+  &__dark {
+    background-color: v.$clr__dark;
+    color: f.set-text-color(v.$clr__dark);
+  }
+  &__light {
+    background-color: v.$clr__light;
+    color: f.set-text-color(v.$clr__light);
+  }
+  &__medium {
+    background-color: v.$clr__medium;
+    color: f.set-text-color(v.$clr__medium);
+  }
+}
+
+#about {
+  &__a {
+    .about__info {
+      display: grid;
+      grid-template-areas:
+        'bioimg bio bio'
+        'aw1 aw2 aw3';
+      gap: 1.2rem;
+    }
+
+    .bio__img {
+      grid-area: bioimg;
+    }
+
+    .bio {
+      grid-area: bio;
+      border-left: 3px solid v.$clr__primary;
+      padding: 0.8rem;
+    }
+
+    .award__1 {
+      grid-area: aw1;
+    }
+    .award__2 {
+      grid-area: aw2;
+    }
+    .award__3 {
+      grid-area: aw3;
+    }
+
+    .award__1 .fas,
+    .award__2 .fas,
+    .award__3 .fas {
+      color: v.$clr__primary;
+      margin: 1rem;
+    }
+  }
+
+  &__b {
+    .progress {
+      background-color: v.$clr__medium;
+      overflow: hidden;
+      margin-bottom: 0.6rem;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      height: 20px;
+
+      div {
+        background-color: v.$clr__primary;
+        color: #fff;
+        height: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+  &__c {
+    .about__logos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+
+      img {
+        width: 70%;
+      }
+    }
+  }
+
+  &__d {
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.5rem;
+
+      ul {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        list-style: none;
+      }
+
+      p {
+        border: 1px solid v.$clr__medium;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        padding: 0.5rem;
+      }
+
+      img {
+        margin-right: 0.5rem;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        height: 50px;
+        width: 50px;
+      }
+    }
+  }
+}

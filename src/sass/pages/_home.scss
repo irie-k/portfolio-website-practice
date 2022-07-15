@@ -58,7 +58,6 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 1.5rem;
-      margin-bottom: 5rem;
 
       &__icon {
         background-color: v.$clr__dark;
