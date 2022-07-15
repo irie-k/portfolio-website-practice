@@ -8,7 +8,7 @@
     "build:sass": "sass  --no-source-map src/sass:public/css",
     "copy:assets": "copyfiles -u 1 ./src/assets/**/* public",
     "copy:js": "copyfiles -u 1 ./src/js/**/* public",
-    "copy:html": "copyfiles -u 1 ./src/*.html public",
+    "copy:html": "copyfiles -u 1 ./src/**/*.html public",
     "copy:pages": "copyfiles -u 1 ./src/pages/**/* public",
     "copy": "npm-run-all --parallel copy:*",
     "watch:assets": "onchange \"/src/assets/**/*\" -- npm run copy:assets",
